@@ -1,0 +1,235 @@
+Classfile /Users/margarita/Projects/new-features/target/classes/Person.class
+  Last modified 19 Mar 2021; size 1632 bytes
+  SHA-256 checksum 77511835947f67a13ca52144a3542eb0a1eb765592f13a49c2f0c4582a47955f
+  Compiled from "Main.java"
+final class Person extends java.lang.Record
+  minor version: 65535
+  major version: 59
+  flags: (0x0030) ACC_FINAL, ACC_SUPER
+  this_class: #14                         // Person
+  super_class: #2                         // java/lang/Record
+  interfaces: 0, fields: 2, methods: 6, attributes: 4
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Record."<init>":()V
+   #2 = Class              #4             // java/lang/Record
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Record
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = Methodref          #14.#15        // Person.name:()Ljava/lang/String;
+  #14 = Class              #16            // Person
+  #15 = NameAndType        #17:#18        // name:()Ljava/lang/String;
+  #16 = Utf8               Person
+  #17 = Utf8               name
+  #18 = Utf8               ()Ljava/lang/String;
+  #19 = Methodref          #20.#21        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #20 = Class              #22            // java/io/PrintStream
+  #21 = NameAndType        #23:#24        // println:(Ljava/lang/String;)V
+  #22 = Utf8               java/io/PrintStream
+  #23 = Utf8               println
+  #24 = Utf8               (Ljava/lang/String;)V
+  #25 = Methodref          #26.#27        // java/lang/String.toLowerCase:()Ljava/lang/String;
+  #26 = Class              #28            // java/lang/String
+  #27 = NameAndType        #29:#18        // toLowerCase:()Ljava/lang/String;
+  #28 = Utf8               java/lang/String
+  #29 = Utf8               toLowerCase
+  #30 = Fieldref           #14.#31        // Person.name:Ljava/lang/String;
+  #31 = NameAndType        #17:#32        // name:Ljava/lang/String;
+  #32 = Utf8               Ljava/lang/String;
+  #33 = Fieldref           #14.#34        // Person.age:I
+  #34 = NameAndType        #35:#36        // age:I
+  #35 = Utf8               age
+  #36 = Utf8               I
+  #37 = InvokeDynamic      #0:#38         // #0:toString:(LPerson;)Ljava/lang/String;
+  #38 = NameAndType        #39:#40        // toString:(LPerson;)Ljava/lang/String;
+  #39 = Utf8               toString
+  #40 = Utf8               (LPerson;)Ljava/lang/String;
+  #41 = InvokeDynamic      #0:#42         // #0:hashCode:(LPerson;)I
+  #42 = NameAndType        #43:#44        // hashCode:(LPerson;)I
+  #43 = Utf8               hashCode
+  #44 = Utf8               (LPerson;)I
+  #45 = InvokeDynamic      #0:#46         // #0:equals:(LPerson;Ljava/lang/Object;)Z
+  #46 = NameAndType        #47:#48        // equals:(LPerson;Ljava/lang/Object;)Z
+  #47 = Utf8               equals
+  #48 = Utf8               (LPerson;Ljava/lang/Object;)Z
+  #49 = Utf8               (Ljava/lang/String;I)V
+  #50 = Utf8               Code
+  #51 = Utf8               LineNumberTable
+  #52 = Utf8               LocalVariableTable
+  #53 = Utf8               this
+  #54 = Utf8               LPerson;
+  #55 = Utf8               MethodParameters
+  #56 = Utf8               ()I
+  #57 = Utf8               (Ljava/lang/Object;)Z
+  #58 = Utf8               o
+  #59 = Utf8               Ljava/lang/Object;
+  #60 = Utf8               SourceFile
+  #61 = Utf8               Main.java
+  #62 = Utf8               Record
+  #63 = Utf8               BootstrapMethods
+  #64 = MethodHandle       6:#65          // REF_invokeStatic java/lang/runtime/ObjectMethods.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/TypeDescriptor;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/Object;
+  #65 = Methodref          #66.#67        // java/lang/runtime/ObjectMethods.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/TypeDescriptor;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/Object;
+  #66 = Class              #68            // java/lang/runtime/ObjectMethods
+  #67 = NameAndType        #69:#70        // bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/TypeDescriptor;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/Object;
+  #68 = Utf8               java/lang/runtime/ObjectMethods
+  #69 = Utf8               bootstrap
+  #70 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/TypeDescriptor;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/Object;
+  #71 = String             #72            // name;age
+  #72 = Utf8               name;age
+  #73 = MethodHandle       1:#30          // REF_getField Person.name:Ljava/lang/String;
+  #74 = MethodHandle       1:#33          // REF_getField Person.age:I
+  #75 = Utf8               InnerClasses
+  #76 = Class              #77            // java/lang/invoke/MethodHandles$Lookup
+  #77 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #78 = Class              #79            // java/lang/invoke/MethodHandles
+  #79 = Utf8               java/lang/invoke/MethodHandles
+  #80 = Utf8               Lookup
+{
+  private final java.lang.String name;
+    descriptor: Ljava/lang/String;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  private final int age;
+    descriptor: I
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  Person(java.lang.String, int);
+    descriptor: (Ljava/lang/String;I)V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=3, args_size=3
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Record."<init>":()V
+         4: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         7: aload_0
+         8: invokevirtual #13                 // Method name:()Ljava/lang/String;
+        11: invokevirtual #19                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        14: aload_1
+        15: invokevirtual #25                 // Method java/lang/String.toLowerCase:()Ljava/lang/String;
+        18: astore_1
+        19: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        22: aload_0
+        23: invokevirtual #13                 // Method name:()Ljava/lang/String;
+        26: invokevirtual #19                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        29: iload_2
+        30: istore_2
+        31: aload_0
+        32: aload_1
+        33: putfield      #30                 // Field name:Ljava/lang/String;
+        36: aload_0
+        37: iload_2
+        38: putfield      #33                 // Field age:I
+        41: return
+      LineNumberTable:
+        line 15: 0
+        line 16: 4
+        line 17: 14
+        line 18: 19
+        line 19: 29
+        line 15: 31
+        line 20: 41
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      42     0  this   LPerson;
+            0      42     1  name   Ljava/lang/String;
+            0      42     2   age   I
+    MethodParameters:
+      Name                           Flags
+      name
+      age
+
+  public final java.lang.String toString();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokedynamic #37,  0             // InvokeDynamic #0:toString:(LPerson;)Ljava/lang/String;
+         6: areturn
+      LineNumberTable:
+        line 14: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   LPerson;
+
+  public final int hashCode();
+    descriptor: ()I
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokedynamic #41,  0             // InvokeDynamic #0:hashCode:(LPerson;)I
+         6: ireturn
+      LineNumberTable:
+        line 14: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   LPerson;
+
+  public final boolean equals(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Z
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #45,  0             // InvokeDynamic #0:equals:(LPerson;Ljava/lang/Object;)Z
+         7: ireturn
+      LineNumberTable:
+        line 14: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       8     0  this   LPerson;
+            0       8     1     o   Ljava/lang/Object;
+
+  public java.lang.String name();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #30                 // Field name:Ljava/lang/String;
+         4: areturn
+      LineNumberTable:
+        line 14: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LPerson;
+
+  public int age();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #33                 // Field age:I
+         4: ireturn
+      LineNumberTable:
+        line 14: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LPerson;
+}
+SourceFile: "Main.java"
+Record:
+  java.lang.String name;
+    descriptor: Ljava/lang/String;
+
+  int age;
+    descriptor: I
+
+BootstrapMethods:
+  0: #64 REF_invokeStatic java/lang/runtime/ObjectMethods.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/TypeDescriptor;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/Object;
+    Method arguments:
+      #14 Person
+      #71 name;age
+      #73 REF_getField Person.name:Ljava/lang/String;
+      #74 REF_getField Person.age:I
+InnerClasses:
+  public static final #80= #76 of #78;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
